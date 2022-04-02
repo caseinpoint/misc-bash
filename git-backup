@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /home/drue/Code
+git add -A
+git commit -m "$(date +%D)"
+git push -u origin master
+cd -

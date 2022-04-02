@@ -1,0 +1,17 @@
+#!/bin/bash
+
+apt update
+printf "\n"
+apt list --upgradable
+
+COLOR="\033[1;35m"
+NOCOLOR="\033[0m"
+printf "\n${COLOR}Upgrade all? [Y/n]: ${NOCOLOR}"
+read NPT
+
+if [[ -z $NPT ]] || [[ ${NPT,,} = "y" ]]
+then
+	apt upgrade -y
+	printf "\n"
+	apt autoremove -y
+fi

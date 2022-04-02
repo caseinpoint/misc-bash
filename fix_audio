@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo cp -f /home/drue/bin/analog-output.conf.common /usr/share/pulseaudio/alsa-mixer/paths/analog-output.conf.common
+
+pulseaudio --kill
+pulseaudio --start
+
