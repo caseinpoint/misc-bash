@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# silently deactivate current environment:
+deactivate 2> /dev/null
+
+# cd to first argument:
+cd $1
+
+# if environment exists, activate it:
+if [[ -e env/bin/activate ]]; then
+	source env/bin/activate
+fi
+
