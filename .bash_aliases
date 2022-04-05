@@ -7,12 +7,12 @@ alias aptup='sudo ~/bin/apt_upgrade'
 alias cda='source ~/bin/cd_env'
 
 # keyboard:
-alias koff='sudo ~/bin/kbd_off'
-alias kon='sudo ~/bin/kbd_on'
+# alias koff='sudo ~/bin/kbd_off'
+# alias kon='sudo ~/bin/kbd_on'
 
 # trash instead of rm:
 alias rm='gio trash'
 
 # clear ipython history:
-alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite'
+alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /dev/null'
 

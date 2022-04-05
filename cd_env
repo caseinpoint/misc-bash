@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# silently deactivate current environment:
+# deactivate current environment, fail silently:
 deactivate 2> /dev/null
 
 # cd to first argument:
 cd $1
 
-# if environment exists, activate it:
-if [[ -e env/bin/activate ]]; then
-	source env/bin/activate
-fi
-
+# if environment exists, activate it, fail silently:
+source $(find . -maxdepth 3 -name 'activate') 2> /dev/null
