@@ -1,4 +1,4 @@
-# apt:
+## apt
 alias aptin='sudo apt update && sudo apt install'
 #alias aptup='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias aptup='sudo ~/bin/apt_upgrade'
@@ -6,13 +6,15 @@ alias aptup='sudo ~/bin/apt_upgrade'
 # cd and activate virtual environment:
 alias cda='source ~/bin/cd_env'
 
-# keyboard:
-# alias koff='sudo ~/bin/kbd_off'
-# alias kon='sudo ~/bin/kbd_on'
-
 # trash instead of rm:
 alias rm='gio trash'
 
+## python
+alias virtualenv='python3 -m venv'
 # clear ipython history:
 alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /dev/null'
 
+
+# keyboard:
+# alias koff='sudo ~/bin/kbd_off'
+# alias kon='sudo ~/bin/kbd_on'
