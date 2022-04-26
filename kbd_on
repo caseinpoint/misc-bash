@@ -1,3 +1,0 @@
-#!/bin/bash
-
-echo 3 | tee /sys/devices/platform/asus-nb-wmi/leds/asus::kbd_backlight/brightness

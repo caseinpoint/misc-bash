@@ -15,7 +15,3 @@ alias rm='gio trash'
 
 # list info of processes listening on ports:
 alias listen='sudo netstat -tulpn | grep LISTEN'
-
-## keyboard:
-# alias koff='sudo ~/bin/kbd_off'
-# alias kon='sudo ~/bin/kbd_on'
