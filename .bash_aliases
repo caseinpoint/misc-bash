@@ -8,8 +8,8 @@ alias aptin='sudo apt update && sudo apt install'
 # status:
 alias gs='git status'
 # commit all tracked files w/comment and push:
-alias gpa='gitcommitallandpush'
-function gitcommitallandpush(){
+alias gpa='commitallandpush'
+function commitallandpush(){
     git commit -am "$1"
     git push
 }
