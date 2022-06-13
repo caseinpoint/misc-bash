@@ -7,6 +7,10 @@ alias aptin='sudo apt update && sudo apt install'
 ## git ##
 # status:
 alias gs='git status'
+# log:
+alias gl='git log'
+# log graph:
+alias gg='git log --graph'
 # commit all tracked files w/comment and push:
 alias gcp='commitallandpush'
 function commitallandpush(){
