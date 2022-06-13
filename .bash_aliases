@@ -7,7 +7,6 @@ alias aptup='sudo ~/bin/apt_upgrade'
 alias aptin='sudo apt update && sudo apt install'
 
 
-
 ## git ##
 
 # status:
@@ -27,7 +26,6 @@ function commitallandpush(){
 }
 
 
-
 ## python ##
 
 # virtual environment:
@@ -40,7 +38,6 @@ alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /de
 alias cda='source ~/bin/cd_env'
 
 
-
 ## java ##
 
 # compile a file and run it with all arguments:
@@ -49,7 +46,6 @@ function compileandrun(){
     javac "$1"
     java "${1%.java}" "${@:2}"
 }
-
 
 
 ## misc. ##
