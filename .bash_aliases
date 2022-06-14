@@ -53,6 +53,12 @@ function compileandrun(){
 # trash instead of rm:
 alias rm='gio trash'
 
+# calculator:
+alias calc='calculator'
+function calculator(){
+    echo "$1" | bc -l
+}
+
 # list info of processes listening on ports:
 alias listen='sudo netstat -tulpn | grep LISTEN'
 
