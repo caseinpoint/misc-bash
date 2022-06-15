@@ -18,6 +18,9 @@ alias gl='git log'
 # log graph:
 alias gg='git log --graph'
 
+# fetch:
+alias gf='git fetch'
+
 # commit all tracked files w/comment and push:
 alias gcp='commitallandpush'
 function commitallandpush(){
