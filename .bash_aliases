@@ -22,8 +22,7 @@ alias gg='git log --graph'
 alias gf='git fetch'
 
 # commit all tracked files w/comment and push:
-alias gcp='commitallandpush'
-function commitallandpush(){
+function gcp(){
     git commit -am "$1"
     git push
 }
@@ -44,8 +43,7 @@ alias cda='source ~/bin/cd_env'
 ## java ##
 
 # compile a file and run it with all arguments:
-alias jcr='compileandrun'
-function compileandrun(){
+function jcr(){
     javac "$1"
     java "${1%.java}" "${@:2}"
 }
@@ -56,9 +54,8 @@ function compileandrun(){
 # trash instead of rm:
 alias rm='gio trash'
 
-# calculator:
-alias calc='calculator'
-function calculator(){
+# simple calculator:
+function calc(){
     echo "$1" | bc -l
 }
 
