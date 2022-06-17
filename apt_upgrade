@@ -4,14 +4,18 @@ apt update
 printf "\n"
 apt list --upgradable
 
+# get user input
 COLOR="\033[1;35m"
 NOCOLOR="\033[0m"
 printf "\n${COLOR}Upgrade all? [Y/n]: ${NOCOLOR}"
 read NPT
 
+# upgrade and autoremove if input is blank, Y or y
 if [[ -z $NPT ]] || [[ ${NPT,,} = "y" ]]
 then
+	printf "\nsudo apt upgrade -y"
 	apt upgrade -y
-	printf "\n"
+
+	printf "\nsudo apt autoremove -y"
 	apt autoremove -y
 fi

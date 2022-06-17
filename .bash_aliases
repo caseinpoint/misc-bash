@@ -1,6 +1,6 @@
 ## apt ##
 
-# update apt packages:
+# update and upgrade apt packages:
 alias aptup='sudo ~/bin/apt_upgrade'
 
 # apt install:
