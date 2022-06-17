@@ -1,6 +1,6 @@
 ## apt ##
 
-# update and upgrade apt packages:
+# update and upgrade apt packages (bash script):
 alias aptup='sudo ~/bin/apt_upgrade'
 
 # apt install:
@@ -23,8 +23,13 @@ alias gf='git fetch'
 
 # commit all tracked files w/comment and push:
 function gcp(){
-    git commit -am "$1"
-    git push
+    if [[ -z $1 ]]
+    then
+        printf "comment required\n"
+    else
+        git commit -am "$1"
+        git push
+    fi
 }
 
 
@@ -45,6 +50,8 @@ alias cda='source ~/bin/cd_env'
 # compile a file and run it with all arguments:
 function jcr(){
     javac "$1"
+
+    # remove .java from first argument, then include any other arguments
     java "${1%.java}" "${@:2}"
 }
 

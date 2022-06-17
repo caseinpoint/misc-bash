@@ -1,7 +1,9 @@
 #!/bin/bash
 
+printf "\nsudo apt update\n"
 apt update
-printf "\n"
+
+printf "\napt list --upgradable\n"
 apt list --upgradable
 
 # get user input
@@ -13,9 +15,9 @@ read NPT
 # upgrade and autoremove if input is blank, Y or y
 if [[ -z $NPT ]] || [[ ${NPT,,} = "y" ]]
 then
-	printf "\nsudo apt upgrade -y"
+	printf "\nsudo apt upgrade -y\n"
 	apt upgrade -y
 
-	printf "\nsudo apt autoremove -y"
+	printf "\nsudo apt autoremove -y\n"
 	apt autoremove -y
 fi
