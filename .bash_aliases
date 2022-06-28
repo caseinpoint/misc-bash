@@ -13,9 +13,10 @@ alias gs='git status'
 alias gl='git log'
 alias gg='git log --graph'
 alias gd='git diff'
+alias ga='git add'
+alias gf='git fetch'
 alias gb='git branch'
 alias gc='git checkout'
-alias gf='git fetch'
 
 # commit all tracked files w/comment and push:
 function gcp(){
