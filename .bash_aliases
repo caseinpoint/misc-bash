@@ -9,23 +9,19 @@ alias aptin='sudo apt update && sudo apt install'
 
 ## git ##
 
-# status:
 alias gs='git status'
-
-# log:
 alias gl='git log'
-
-# log graph:
 alias gg='git log --graph'
-
-# fetch:
+alias gd='git diff'
+alias gb='git branch'
+alias gc='git checkout'
 alias gf='git fetch'
 
 # commit all tracked files w/comment and push:
 function gcp(){
     if [[ -z $1 ]]
     then
-        printf "comment required\n"
+        printf "Comment required. Aborting\n"
     else
         git commit -am "$1"
         git push
@@ -41,7 +37,7 @@ alias virtualenv='python3 -m venv'
 # clear ipython history:
 alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /dev/null'
 
-# cd and activate virtual environment:
+# cd and activate virtual environment (bash script):
 alias cda='source ~/bin/cd_env'
 
 
