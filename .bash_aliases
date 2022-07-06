@@ -32,6 +32,9 @@ function gcp(){
 
 ## python ##
 
+# update pip:
+alias pipu='pip3 install --upgrade pip'
+
 # virtual environment:
 alias virtualenv='python3 -m venv'
 
