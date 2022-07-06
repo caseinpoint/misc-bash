@@ -17,6 +17,7 @@ alias ga='git add'
 alias gf='git fetch'
 alias gb='git branch'
 alias gc='git checkout'
+alias gr='git restore'
 
 # commit all tracked files w/comment and push:
 function gcp(){
