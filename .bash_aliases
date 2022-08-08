@@ -14,10 +14,16 @@ alias gl='git log'
 alias gg='git log --graph'
 alias gd='git diff'
 alias ga='git add'
+alias gcam='git commit -am'
 alias gf='git fetch'
 alias gb='git branch'
 alias gc='git checkout'
 alias gr='git restore'
+
+# push/pull:
+function gp(){
+    git p"$@"
+}
 
 # commit all tracked files w/comment and push:
 function gcp(){
@@ -36,7 +42,7 @@ function gcp(){
 # update pip:
 alias pipu='pip3 install --upgrade pip'
 
-# virtual environment:
+# virtual environment (to match Hackbright lecture commands):
 alias virtualenv='python3 -m venv'
 
 # clear ipython history:
@@ -44,6 +50,9 @@ alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /de
 
 # cd and activate virtual environment (bash script):
 alias cda='source ~/bin/cd_env'
+
+# poetry run invoke...:
+alias pri='poetry run invoke'
 
 
 ## java ##
@@ -61,6 +70,9 @@ function jcr(){
 
 # trash instead of rm:
 alias rm='gio trash'
+
+# reboot:
+alias reboot='shutdown -r "now" "Rebooting now."'
 
 # simple calculator:
 function calc(){
