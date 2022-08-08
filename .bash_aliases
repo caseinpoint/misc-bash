@@ -21,8 +21,8 @@ alias gc='git checkout'
 alias gr='git restore'
 
 # push/pull:
-function gp(){
-    git p"$@"
+function gpu(){
+    git pu"$@"
 }
 
 # commit all tracked files w/comment and push:
