@@ -84,3 +84,6 @@ alias listen='sudo netstat -tulpn | grep LISTEN'
 
 # run autograder:
 alias grade='/home/drue/HB/skills-assessments/autograder/autograder grade --rebuild --post'
+
+# print 'all students present' script for copying:
+alias elf='cat /home/drue/HB/my_tools/elfing.js && echo'
