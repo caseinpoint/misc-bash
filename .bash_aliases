@@ -45,7 +45,7 @@ alias pipu='pip3 install --upgrade pip'
 # virtual environment (to match Hackbright lecture commands):
 alias virtualenv='python3 -m venv'
 
-# clear ipython history:
+# delete ipython history:
 alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /dev/null'
 
 # cd and activate virtual environment (bash script):
@@ -66,6 +66,15 @@ function jcr(){
 }
 
 
+## hackbright ##
+
+# run autograder:
+alias grade='/home/drue/HB/skills-assessments/autograder/autograder grade --rebuild --post'
+
+# print 'all students present' script for copying:
+alias elf='cat /home/drue/HB/my_tools/elfing.js && echo'
+
+
 ## misc. ##
 
 # trash instead of rm:
@@ -82,8 +91,10 @@ function calc(){
 # list info of processes listening on ports:
 alias listen='sudo netstat -tulpn | grep LISTEN'
 
-# run autograder:
-alias grade='/home/drue/HB/skills-assessments/autograder/autograder grade --rebuild --post'
+# nordvpn:
+alias vpns='nordvpn status'
+alias vpni='nordvpn login'
+alias vpno='nordvpn logout'
+alias vpnc='nordvpn connect'
+alias vpnd='nordvpn disconnect'
 
-# print 'all students present' script for copying:
-alias elf='cat /home/drue/HB/my_tools/elfing.js && echo'
