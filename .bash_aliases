@@ -89,7 +89,7 @@ function calc(){
 }
 
 # list info of processes listening on ports:
-alias listen='sudo netstat -tulpn | grep LISTEN'
+alias listen="sudo netstat -tulpn | egrep 'LISTEN\W+[0-9]+'"
 
 # nordvpn:
 alias vpns='nordvpn status'
