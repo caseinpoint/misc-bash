@@ -1,0 +1,23 @@
+#!/bin/zsh
+
+printf "\nbrew update\n"
+brew update
+
+printf "\nbrew outdated\n"
+brew outdated
+
+# get user input
+COLOR="\033[1;35m"
+NOCOLOR="\033[0m"
+printf "\n${COLOR}Upgrade all? [Y/n]: ${NOCOLOR}"
+read NPT
+
+# upgrade and autoremove if input is blank, Y or y
+if [[ -z $NPT ]] || [[ $NPT = [yY] ]]
+then
+    printf "\nbrew upgrade -y\n"
+    brew upgrade
+
+    printf "\nbrew autoremove\n"
+    brew autoremove
+fi

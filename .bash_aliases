@@ -7,6 +7,12 @@ alias aptup='sudo ~/bin/apt_upgrade'
 alias aptin='sudo apt update && sudo apt install'
 
 
+## brew ##
+
+# update and upgrade brew casks:
+alias brewup="$HOME/bin/brew_upgrade"
+
+
 ## git ##
 
 alias gs='git status'
