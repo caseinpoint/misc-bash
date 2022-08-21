@@ -77,6 +77,11 @@ alias elf='cat /home/drue/HB/my_tools/elfing.js && echo'
 
 ## misc. ##
 
+# ls:
+alias ll='ls -alF'
+alias la='ls -AF'
+alias l='ls -CF'
+
 # trash instead of rm:
 alias rm='gio trash'
 
