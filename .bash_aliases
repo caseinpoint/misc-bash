@@ -83,7 +83,7 @@ alias la='ls -AF'
 alias l='ls -CF'
 
 # trash instead of rm:
-alias rm='gio trash'
+#alias rm='gio trash'
 
 # reboot:
 alias reboot='shutdown -r "now" "Rebooting now."'
