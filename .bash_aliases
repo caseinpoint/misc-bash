@@ -82,6 +82,11 @@ alias ll='ls -alF'
 alias la='ls -AF'
 alias l='ls -CF'
 
+# mkdir and cd:
+function mkcd(){
+    mkdir $1 && cd $1
+}
+
 # trash instead of rm:
 #alias rm='gio trash'
 
