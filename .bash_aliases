@@ -46,7 +46,7 @@ alias pipu='pip3 install --upgrade pip'
 alias virtualenv='python3 -m venv'
 
 # delete ipython history:
-alias ipclr='gio trash /home/drue/.ipython/profile_default/history.sqlite 2> /dev/null'
+alias ipclr="gio trash $HOME/.ipython/profile_default/history.sqlite 2> /dev/null"
 
 # cd and activate virtual environment (bash script):
 alias cda='source ~/bin/cd_env'
@@ -69,10 +69,10 @@ function jcr(){
 ## hackbright ##
 
 # run autograder:
-alias grade='/home/drue/HB/skills-assessments/autograder/autograder grade --rebuild --post'
+alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
 
 # print 'all students present' script for copying:
-alias elf='cat /home/drue/HB/my_tools/elfing.js && echo'
+alias elf="cat $HOME/HB/my_tools/elfing.js && echo"
 
 
 ## misc. ##
