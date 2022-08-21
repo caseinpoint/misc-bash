@@ -80,6 +80,9 @@ alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild -
 # print 'all students present' script for copying:
 alias elf="cat $HOME/HB/my_tools/elfing.js && echo"
 
+# open demo lecture index.rst
+alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
+
 
 ## misc. ##
 
