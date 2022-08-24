@@ -52,7 +52,7 @@ alias pipu='pip3 install --upgrade pip'
 alias virtualenv='python3 -m venv'
 
 # delete ipython history:
-alias ipclr="gio trash $HOME/.ipython/profile_default/history.sqlite 2> /dev/null"
+alias ipclr="rm $HOME/.ipython/profile_default/history.sqlite 2> /dev/null"
 
 # cd and activate virtual environment (bash script):
 alias cda="source $HOME/bin/cd_env"
@@ -96,8 +96,10 @@ function mkcd(){
     mkdir $1 && cd $1
 }
 
-# trash instead of rm:
-#alias rm='gio trash'
+# trash instead of rm (if command exists):
+if [[ -x "$(command -v gio)" ]]; then
+    alias rm='gio trash'
+fi
 
 # reboot:
 alias reboot='shutdown -r "now" "Rebooting now."'
