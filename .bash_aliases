@@ -96,9 +96,9 @@ function mkcd(){
     mkdir $1 && cd $1
 }
 
-# trash instead of rm (if command exists):
+# trash (if command exists):
 if [[ -x "$(command -v gio)" ]]; then
-    alias rm='gio trash'
+    alias trash='gio trash'
 fi
 
 # reboot:
