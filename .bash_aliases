@@ -1,7 +1,7 @@
 ## apt ##
 
 # update and upgrade apt packages (bash script):
-alias aptup='sudo ~/bin/apt_upgrade'
+alias aptup="sudo $HOME/bin/apt_upgrade"
 
 # apt install:
 alias aptin='sudo apt update && sudo apt install'
@@ -55,7 +55,7 @@ alias virtualenv='python3 -m venv'
 alias ipclr="gio trash $HOME/.ipython/profile_default/history.sqlite 2> /dev/null"
 
 # cd and activate virtual environment (bash script):
-alias cda='source ~/bin/cd_env'
+alias cda="source $HOME/bin/cd_env"
 
 # poetry run invoke...:
 alias pri='poetry run invoke'
@@ -78,7 +78,7 @@ function jcr(){
 alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
 
 # print 'all students present' script for copying:
-alias elf="cat $HOME/HB/my_tools/elfing.js && echo"
+alias elf="cat $HOME/HB/my_tools/misc/elfing.js && echo"
 
 # open demo lecture index.rst
 alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
@@ -117,3 +117,5 @@ alias vpno='nordvpn logout'
 alias vpnc='nordvpn connect'
 alias vpnd='nordvpn disconnect'
 
+# sqltabs:
+alias sqltabs="$HOME/Downloads/sqltabs.linux/sqltabs-linux-x64/sqltabs"
