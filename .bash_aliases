@@ -13,6 +13,12 @@ alias aptin='sudo apt update && sudo apt install'
 alias brewup="$HOME/bin/brew_upgrade"
 
 
+## omz ##
+
+alias omzon="trash $HOME/.zshrc && cp $HOME/.zshrc.omz $HOME/.zshrc && exit"
+alias omzoff="trash $HOME/.zshrc && cp $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc && exit"
+
+
 ## git ##
 
 alias gs='git status'
