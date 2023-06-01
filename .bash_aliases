@@ -1,3 +1,9 @@
+## ls ##
+alias ls='ls -FG'
+alias la='ls -aFG'
+alias ll='ls -lFG'
+
+
 ## apt ##
 
 # update and upgrade apt packages (bash script):
