@@ -1,7 +1,7 @@
 ## ls ##
-alias ls='ls -FG'
-alias la='ls -aFG'
-alias ll='ls -lFG'
+alias ls='ls -FG --color=auto'
+alias la='ls -aFG --color=auto'
+alias ll='ls -lFG --color=auto'
 
 
 ## apt ##
