@@ -58,8 +58,8 @@ function gcp(){
 
 ## python ##
 
-# update pip:
-alias pipu='pip3 install --upgrade pip'
+# update pip and wheel:
+alias pipu='pip3 install --upgrade pip wheel'
 
 # virtual environment (to match Hackbright lecture commands):
 alias virtualenv='python3 -m venv'
@@ -115,8 +115,8 @@ alias listen="sudo netstat -tulpn | egrep 'State\W+PID|LISTEN\W+[0-9]+'"
 
 ## network testing ##
 
-# ping router
-alias pr='ping -t 10 -c 10 192.168.0.1'
+# ping wi-fi router
+alias pw='ping -t 10 -c 10 192.168.0.1'
 # ping OpenDNS
 alias pd='ping -t 10 -c 10 208.67.222.222'
 # print network devices
@@ -135,11 +135,13 @@ alias sqltabs="$HOME/Downloads/sqltabs.linux/sqltabs-linux-x64/sqltabs"
 
 ## hackbright ##
 
+# no longer in use, commented out
+
 # run autograder:
-alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
+# alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
 
 # print 'all students present' script for copying:
-alias elf="cat $HOME/HB/my_tools/misc/elfing.js && echo"
+# alias elf="cat $HOME/HB/my_tools/misc/elfing.js && echo"
 
 # open demo lecture index.rst
-alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
+# alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
