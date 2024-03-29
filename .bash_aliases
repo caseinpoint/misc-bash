@@ -113,8 +113,14 @@ function calc(){
 # list info of processes listening on ports:
 alias listen="sudo netstat -tulpn | egrep 'State\W+PID|LISTEN\W+[0-9]+'"
 
+## network testing ##
+
+# ping router
+alias pr='ping -t 10 -c 10 192.168.0.1'
 # ping OpenDNS
-alias pt='ping -t 10 -c 10 208.67.222.222'
+alias pd='ping -t 10 -c 10 208.67.222.222'
+# print network devices
+alias pn='sudo nmap -sn 192.168.0.0/24'
 
 # nordvpn:
 alias vpns='nordvpn status'
