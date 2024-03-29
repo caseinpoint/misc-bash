@@ -85,18 +85,6 @@ function jcr(){
 }
 
 
-## hackbright ##
-
-# run autograder:
-alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
-
-# print 'all students present' script for copying:
-alias elf="cat $HOME/HB/my_tools/misc/elfing.js && echo"
-
-# open demo lecture index.rst
-alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
-
-
 ## misc. ##
 
 # ls:
@@ -125,6 +113,9 @@ function calc(){
 # list info of processes listening on ports:
 alias listen="sudo netstat -tulpn | egrep 'State\W+PID|LISTEN\W+[0-9]+'"
 
+# ping OpenDNS
+alias pt='ping -t 10 -c 10 208.67.222.222'
+
 # nordvpn:
 alias vpns='nordvpn status'
 alias vpni='nordvpn login'
@@ -134,3 +125,15 @@ alias vpnd='nordvpn disconnect'
 
 # sqltabs:
 alias sqltabs="$HOME/Downloads/sqltabs.linux/sqltabs-linux-x64/sqltabs"
+
+
+## hackbright ##
+
+# run autograder:
+alias grade="$HOME/HB/skills-assessments/autograder/autograder grade --rebuild --post"
+
+# print 'all students present' script for copying:
+alias elf="cat $HOME/HB/my_tools/misc/elfing.js && echo"
+
+# open demo lecture index.rst
+alias demo="code $HOME/HB/swe-curriculum/lectures/demo/index.rst"
