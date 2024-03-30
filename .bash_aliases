@@ -36,6 +36,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gf='git fetch'
 alias gb='git branch'
+alias gsw='git switch'
 alias gc='git checkout'
 alias gr='git restore'
 
@@ -43,6 +44,7 @@ alias gr='git restore'
 function gpu(){
     git pu"$@"
 }
+# usage: "gpu sh" or "gpu ll"
 
 # commit all tracked files w/comment and push:
 function gcp(){
