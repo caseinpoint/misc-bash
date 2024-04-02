@@ -39,6 +39,7 @@ alias gb='git branch'
 alias gsw='git switch'
 alias gc='git checkout'
 alias gr='git restore'
+alias gm='git merge'
 
 # push/pull:
 function gpu(){
