@@ -113,6 +113,9 @@ function calc(){
     echo "$1" | bc -l
 }
 
+# restart pipewire audio
+alias rspipe='rm -r ~/.config/pulse && systemctl --user restart wireplumber pipewire pipewire-pulse'
+
 # list info of processes listening on ports:
 alias listen="sudo netstat -tulpn | egrep 'State\W+PID|LISTEN\W+[0-9]+'"
 
